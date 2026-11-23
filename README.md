@@ -52,11 +52,11 @@ Plots created by the python code
 -  **churn_rate_by_segment.png**          Churn % by key segments (grid)
 -  **trait_churn_ranking.png**            Top traits by observed churn rate
 -  **cv_roc_auc.png**                     Logistic regression CV ROC-AUC
-  model_comparison.png               ROC-AUC / accuracy / recall by model
-  feature_importance_agreement.png   Top 12 features across models
-  confusion_matrix.png               Logistic regression test CM
-  coefficient_comparison.png         Most vs least important coefficients
-  consensus_feature_importance.png   Averaged importance ranking
+-  **model_comparison.png**               ROC-AUC / accuracy / recall by model
+-  **feature_importance_agreement.png**   Top 12 features across models
+-  **confusion_matrix.png**               Logistic regression test CM
+-  **coefficient_comparison.png**         Most vs least important coefficients
+-  **consensus_feature_importance.png**   Averaged importance ranking
 
 
 Requirements
@@ -65,11 +65,11 @@ Python 3.x with: pandas, numpy, matplotlib, scikit-learn, xgboost
 
 Key result snapshot (from last run)
 -----------------------------------
-  Customers: 7,043  |  Churn rate: 26.5%
-  Logistic Regression test ROC-AUC: 0.856
-  5-fold CV mean ROC-AUC: 0.857 (+/- 0.006)
-  Model ROC-AUC (same split): LR 0.856 | XGBoost 0.852 | RF 0.843
-  Highest-churn segments: tenure 0-12 mo (47.4%), electronic check
-  (45.3%), month-to-month (42.7%), fibre optics (41.9%)
-  Consensus top drivers: month-to-month contract, tenure, total
-  charges, dependents, fibre optics
+-  Customers: 7,043  |  Churn rate: 26.5%
+-  Logistic Regression test ROC-AUC: 0.856
+-  5-fold CV mean ROC-AUC: 0.857 (+/- 0.006)
+-  Model ROC-AUC (same split): LR 0.856 | XGBoost 0.852 | RF 0.843
+-  Highest-churn segments: tenure 0-12 mo (47.4%), electronic check
+-  (45.3%), month-to-month (42.7%), fibre optics (41.9%)
+-  Consensus top drivers: month-to-month contract, tenure, total
+-  charges, dependents, fibre optics
