@@ -29,29 +29,29 @@ of telecom customer churn.
 
 What the analysis does
 ----------------------
-1. Load 7,043 customers from TelcoSemiCleanedup.csv (overall churn
+- **1.** - Load 7,043 customers from TelcoSemiCleanedup.csv (overall churn
    26.5%: 1,869 churned / 5,174 stayed).
-2. Keep Churn Reason aside; one-hot encode remaining categoricals for
+- **2.** Keep Churn Reason aside; one-hot encode remaining categoricals for
    modelling (Online Backup, Device Protection, Tech Support,
    Streaming TV/Movies, Contract, Payment Method).
-3. Exploratory churn rates by contract, internet service, payment
+- **3.** Exploratory churn rates by contract, internet service, payment
    method, monthly/total charges (quintiles), and tenure bins.
-4. Rank manager-friendly traits by observed churn rate (min 50
+- **4.** Rank manager-friendly traits by observed churn rate (min 50
    customers per trait).
-5. Fit logistic regression on an 80/20 stratified split (seed 42) with
+- **5.** Fit logistic regression on an 80/20 stratified split (seed 42) with
    standardized continuous columns; report ROC-AUC, classification
    metrics, and confusion matrix.
-6. Validate with 5-fold stratified cross-validation.
-7. Compare Logistic Regression vs Random Forest vs XGBoost (or
+- **6.** Validate with 5-fold stratified cross-validation.
+- **7.** Compare Logistic Regression vs Random Forest vs XGBoost (or
    HistGradientBoosting if xgboost is not installed).
-8. Compare normalized feature importances across models and publish a
+- **8.** Compare normalized feature importances across models and publish a
    consensus ranking.
 
 Plots created by the python code
 -----------------
-  churn_rate_by_segment.png          Churn % by key segments (grid)
-  trait_churn_ranking.png            Top traits by observed churn rate
-  cv_roc_auc.png                     Logistic regression CV ROC-AUC
+-  **churn_rate_by_segment.png**          Churn % by key segments (grid)
+-  **trait_churn_ranking.png**            Top traits by observed churn rate
+-  **cv_roc_auc.png**                     Logistic regression CV ROC-AUC
   model_comparison.png               ROC-AUC / accuracy / recall by model
   feature_importance_agreement.png   Top 12 features across models
   confusion_matrix.png               Logistic regression test CM
