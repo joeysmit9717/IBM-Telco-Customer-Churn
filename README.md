@@ -10,6 +10,13 @@ Use TelcoAanpassingenCustomers2.sql for the final clean up to create the custome
 
 Instead, directly download TelcoSemiCleandup.csv from the Data branch.
 
+Overview of customer characteristics and churn rates
+----------------------------------------------------
+
+Key finding of customer churn rates based on contract specifics and contract time.
+![Telco churn rates](Data/churn_rate_by_segments.png)
+
+
 What this folder contains
 -------------------------
 This portfolio package documents an exploratory and predictive analysis
