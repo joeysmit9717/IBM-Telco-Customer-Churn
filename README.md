@@ -15,14 +15,10 @@ What this folder contains
 This portfolio package documents an exploratory and predictive analysis
 of telecom customer churn.
 
-  README.txt          - this file (report + Python code overview)
-  report.tex          - LaTeX source for the PDF findings report (Overleaf)
-  figures/            - PNG plots embedded by report.tex
-
-  Upstream analysis script and data (project root, one level above
-  portfolio/):
-  TelcoAnalysis.py
-  TelcoSemiCleanedup.csv
+ - **README.md**         - General overview of the project
+ - **TelcoChurn.pdf**          - report on the findings
+ - **SQL files**          - SQL files to create the Semi cleaned up dataset used in the python code. The final result will be the TelcoSemiCleanedup.csv file which is included in the Data branch.
+ - **TelcoAnalysis.py**  - Python code generating the plots in the report. Depends on the TelcoSemiCleanedup.csv file.
 
 What the analysis does
 ----------------------
@@ -44,7 +40,7 @@ What the analysis does
 8. Compare normalized feature importances across models and publish a
    consensus ranking.
 
-Plots in figures/
+Plots created by the python code
 -----------------
   churn_rate_by_segment.png          Churn % by key segments (grid)
   trait_churn_ranking.png            Top traits by observed churn rate
@@ -55,32 +51,10 @@ Plots in figures/
   coefficient_comparison.png         Most vs least important coefficients
   consensus_feature_importance.png   Averaged importance ranking
 
-How to regenerate the plots
----------------------------
-From the project root (where TelcoAnalysis.py lives):
-
-  set MPLBACKEND=Agg
-  py -3 TelcoAnalysis.py
-
-On PowerShell:
-
-  $env:MPLBACKEND='Agg'
-  py -3 TelcoAnalysis.py
-
-Figures are written to this folder under figures/. Set SAVE_FIGURES=0 to
-skip saving PNGs.
-
-How to build the PDF report (Overleaf)
---------------------------------------
-1. Create a new Overleaf project.
-2. Upload report.tex and the figures/ folder (keep the same relative
-   paths: figures/*.png).
-3. Compile. Download the PDF for your portfolio / applications.
 
 Requirements
 ------------
-Python 3.x with: pandas, numpy, matplotlib, scikit-learn
-Optional: xgboost (otherwise HistGradientBoostingClassifier is used)
+Python 3.x with: pandas, numpy, matplotlib, scikit-learn, xgboost
 
 Key result snapshot (from last run)
 -----------------------------------
