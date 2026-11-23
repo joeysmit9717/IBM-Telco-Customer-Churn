@@ -6,7 +6,9 @@ How to create the cleaned-up database
 
 Create a customers table in the TelcoCustomerchurn database in your SQL environment by using TelcoCreateCustomerBase.sql . 
 Use TelcoAanpassingen.sql to make the first clean up changes to the telco_customer_churn.csv (original Telco dataset) which will be saved in the customers table.
-Use TelcoAanpassingenCustomers2.sql for the final clean up to create the customers_ml table. Save this table as TelcoSemiCleanedup.csv and load this file into python.
+Use TelcoAanpassingenCustomers2.sql for the final clean up to create the customers_ml table. Save the customers_ml table as TelcoSemiCleanedup.csv and load this file into python file.
+
+Instead, directly download TelcoSemiCleandup.csv from the Data branch.
 
 What this folder contains
 -------------------------
