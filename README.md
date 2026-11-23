@@ -14,7 +14,7 @@ Overview of customer characteristics and churn rates
 ----------------------------------------------------
 
 Key finding of customer churn rates based on contract specifics and contract time.
-![Telco churn rates](Data/churn_rate_by_segments.png)
+![Telco churn rates](Data/churn_rate_by_segment.png)
 
 
 What this folder contains
