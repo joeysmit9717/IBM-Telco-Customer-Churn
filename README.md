@@ -7,6 +7,8 @@ The dataset used in this project was obtained from its original source and is no
 
 All rights and ownership of the original dataset remain with their respective owners. Please refer to the original source for licensing information and terms of use.
 
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+
 How to create the cleaned-up database
 -------------------------------------
 
