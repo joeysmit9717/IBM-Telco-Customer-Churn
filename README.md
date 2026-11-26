@@ -1,6 +1,12 @@
 Telco Customer Churn Analysis
 =============================
 
+## Dataset & Attribution
+
+The dataset used in this project was obtained from its original source and is not owned or created by me. It is used for educational and portfolio purposes only.
+
+All rights and ownership of the original dataset remain with their respective owners. Please refer to the original source for licensing information and terms of use.
+
 How to create the cleaned-up database
 -------------------------------------
 
